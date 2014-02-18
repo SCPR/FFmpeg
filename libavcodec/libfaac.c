@@ -112,7 +112,7 @@ static av_cold int Faac_encode_init(AVCodecContext *avctx)
             ret = AVERROR(EINVAL);
             goto error;
     }
-    faac_cfg->mpegVersion = MPEG4;
+    faac_cfg->mpegVersion = MPEG2;
     faac_cfg->useTns = 0;
     faac_cfg->allowMidside = 1;
     faac_cfg->bitRate = avctx->bit_rate / avctx->channels;
